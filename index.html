@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tin Tức 24H - Tin tức thời sự, xã hội, kinh doanh, công nghệ và đời sống.">
+    <title>Tin Tức 24H | Tin mới mỗi ngày</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span id="today-date">TIN TỨC MỖI NGÀY</span>
+            <span>Thông tin nhanh chóng · Góc nhìn đa chiều</span>
+        </div>
+    </div>
+
+    <header class="masthead">
+        <div class="container masthead-inner">
+            <a class="brand" href="index.html" aria-label="Tin Tức 24H - Trang chủ">
+                <span class="brand-mark">24</span>
+                <span class="brand-copy">
+                    <strong>TIN TỨC<span>24H</span></strong>
+                    <small>CẬP NHẬT TỪNG KHOẢNH KHẮC</small>
+                </span>
+            </a>
+
+            <div class="header-right">
+                <span class="edition">ẤN BẢN ĐIỆN TỬ</span>
+                <a class="header-button" href="crawler.html">Quản lý tin tức ↗</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar" aria-label="Danh mục tin tức">
+        <div class="container nav-inner">
+            <a class="home-link active" href="index.html" id="home-link" aria-label="Trang chủ">⌂</a>
+            <div id="category-menu" class="category-menu">
+                <a href="index.html">Trang chủ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <div class="breaking-line">
+            <span class="breaking-label">TIN MỚI</span>
+            <div id="breaking-news" class="breaking-content">
+                Cập nhật những thông tin mới nhất tại Tin Tức 24H
+            </div>
+        </div>
+
+        <section class="hero-section" aria-labelledby="page-title">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">ĐIỂM TIN HÔM NAY</span>
+                    <h1 id="page-title">Tin tức nổi bật</h1>
+                </div>
+                <span class="section-note">Chọn lọc dành cho bạn</span>
+            </div>
+
+            <p id="loading-message" class="status-message" role="status">
+                Đang tải dữ liệu tin tức...
+            </p>
+
+            <div id="featured-news" class="featured-grid"></div>
+        </section>
+
+        <div class="content-layout">
+            <section class="latest-section" id="latest-news">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">KHÔNG BỎ LỠ</span>
+                        <h2>Tin mới cập nhật</h2>
+                    </div>
+                    <span id="news-count" class="count-label">Các bài viết</span>
+                </div>
+
+                <div id="news-list" class="news-list"></div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="sidebar-card">
+                    <span class="eyebrow">KHÁM PHÁ</span>
+                    <h2>Đọc tin theo chủ đề</h2>
+                    <p>Lựa chọn chuyên mục bạn quan tâm để tìm những bài viết phù hợp.</p>
+                    <div id="sidebar-categories" class="sidebar-categories"></div>
+                </section>
+
+                <section class="sidebar-card editorial-card">
+                    <span class="editorial-icon">✦</span>
+                    <h2>Thông tin có chọn lọc</h2>
+                    <p>Giao diện tin tức phục vụ việc học tập, thực hành xây dựng ứng dụng web và quản lý dữ liệu bài viết.</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-about">
+                <a class="brand footer-brand" href="index.html">
+                    <span class="brand-mark">24</span>
+                    <span class="brand-copy">
+                        <strong>TIN TỨC<span>24H</span></strong>
+                        <small>CẬP NHẬT TỪNG KHOẢNH KHẮC</small>
+                    </span>
+                </a>
+                <p>Website tin tức điện tử được xây dựng trong khuôn khổ môn học Xây dựng ứng dụng Web.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Khám phá</h3>
+                <a href="index.html">Trang chủ</a>
+                <a href="#latest-news">Tin mới cập nhật</a>
+                <a href="crawler.html">Quản lý tin tức</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Về website</h3>
+                <p>HTML · CSS · JavaScript</p>
+                <p>Dữ liệu JSON · LocalStorage</p>
+                <p>Giao diện tương thích nhiều thiết bị</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 TIN TỨC 24H</span>
+                <span>Sản phẩm thực hành học phần</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
